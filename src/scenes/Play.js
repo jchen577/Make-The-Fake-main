@@ -81,7 +81,7 @@ class Play extends Phaser.Scene{
                         tLaser.body.allowGravity = false;
                         this.laserGroup.add(tLaser);
                         this.sound.play('gunShot',{volume: 0.1});
-                        this.timedEvent = this.time.delayedCall(1000, this.onCooldown, [], this);
+                        this.timedEvent = this.time.delayedCall(10, this.onCooldown, [], this);
                     }
                 }
             }
